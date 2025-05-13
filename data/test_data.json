@@ -1,0 +1,32 @@
+[
+    {
+        "case_name": "login_success",
+        "url": "http://172.18.11.231:8081/security-jwt-service/auth/login",
+        "method": "post",
+        "data": {
+            "loginName": "TDYY01",
+            "password": "TI+s4iYRQTwcbYDrtLU5eLB36ZTaxC1f9hIo26EwyD1QnnAtJz7XM12hI4dBL2fE8XlWWYJJhOscc3/ja5ZeCO4W4boFsqLrSwaBm8RcX7KiH6e2PECwmO5Ib/P91OIzOqht09Yvo/RGdGWEShRWOoVLgAxBZWj2J5j0JNvsJCA",
+            "uuId": "9839c143-6a34-4122-a34f-785fea672473",
+            "code": "5055",
+            "rememberMe": "0",
+            "captchaEnabled": 0
+        },
+        "expected_status": 1,
+        "expected_message": "Success"
+    },
+    {
+        "case_name": "login_failure",
+        "url": "http://172.18.11.231:8081/security-jwt-service/auth/login",
+        "method": "post",
+        "data": {
+            "loginName": "TDYY00",
+            "password": "TI+s4iYRQTwcbYDrtLU5eLB36ZTaxC1f9hIo26EwyD1QnnAtJz7XM12hI4dBL2fE8XlWWYJJhOscc3/ja5ZeCO4W4boFsqLrSwaBm8RcX7KiH6e2PECwmO5Ib/P91OIzOqht09Yvo/RGdGWEShRWOoVLgAxBZWj2J5j0JNvsJCA",
+            "uuId": "9839c143-6a34-4122-a34f-785fea672473",
+            "code": "5055",
+            "rememberMe": "0",
+            "captchaEnabled": 0
+        },
+        "expected_status": 1,
+        "expected_message": "賬戶不存在"
+    }
+]
